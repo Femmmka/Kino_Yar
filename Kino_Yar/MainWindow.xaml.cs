@@ -21,11 +21,18 @@ namespace Kino_Yar
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow init;
         public MainWindow()
         {
             InitializeComponent();
+            OpenPage(new Pages.Kinoteatr.Main());
 
-            new KinoteatrContext(0, "test", 12, 12).Add();
+            init = this;
+        }
+
+        public void OpenPage(Page Page)
+        {
+            frame.Navigate(Page);
         }
     }
 }
