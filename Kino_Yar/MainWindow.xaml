@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="490" Width="800">
     <Grid>
-        <Frame x:Name="frame" NavigationUIVisibility="Hidden" HorizontalAlignment="Center" Width="800"/>
+        <Button Click="OpenKino" Content="Кинотеатры" Height="25" Margin="10,10,0,0" HorizontalAlignment="Left" Width="100" Background="#FF73E618" BorderBrush="#FF41E207" Foreground="White" VerticalAlignment="Top"/>
+        <Button Click="OpenAfisha" Content="Афишы" Height="25" Margin="115,10,0,0" HorizontalAlignment="Left" Width="100" Background="#FF73E618" BorderBrush="#FF41E207" Foreground="White" VerticalAlignment="Top"/>
+
+
+
+
+        <Frame x:Name="frame" NavigationUIVisibility="Hidden" HorizontalAlignment="Center" Width="800" Margin="0,40,0,0"/>
     </Grid>
 </Window>

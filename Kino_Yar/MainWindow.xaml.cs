@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kino_Yar.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Kino_Yar.Classes;
 
 namespace Kino_Yar
 {
@@ -25,7 +25,7 @@ namespace Kino_Yar
         public MainWindow()
         {
             InitializeComponent();
-            OpenPage(new Pages.Kinoteatr.Main());
+            OpenPage(new Pages.Afisha.Main());
 
             init = this;
         }
@@ -34,5 +34,9 @@ namespace Kino_Yar
         {
             frame.Navigate(Page);
         }
+
+        private void OpenKino(object sender, RoutedEventArgs e) => OpenPage(new Pages.Kinoteatr.Main());
+
+        private void OpenAfisha(object sender, RoutedEventArgs e) => OpenPage(new Pages.Afisha.Main());
     }
 }
