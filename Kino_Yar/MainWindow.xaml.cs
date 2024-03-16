@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Kino_Yar.Classes;
 
 namespace Kino_Yar
 {
@@ -23,6 +24,8 @@ namespace Kino_Yar
         public MainWindow()
         {
             InitializeComponent();
+
+            new KinoteatrContext(0, "test", 12, 12).Add();
         }
     }
 }
